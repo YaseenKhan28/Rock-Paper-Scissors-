@@ -1,0 +1,46 @@
+console.log("Hello World!");
+console.log("This is a rock paper and scissors game where there is a javascript randamizor choosing the options.")
+
+console.log('Tips: ' + '1.If the randamizor on your side picks a different options, then keep on running it til   you get your choice.' + ' 2.If you get a tie, then   run it again.');
+
+
+console.log("                   Have fun :}")
+let randomNumber = Math.floor(Math.random() * 3);
+
+console.log(randomNumber);
+
+let RPS = '';
+
+switch (randomNumber) {
+  case 0:
+    RPS = 'Rock';
+    break;
+  case 1:
+    RPS = 'Paper';
+    break;
+  case 2:
+    RPS = 'Scissor';
+    break;
+}
+
+console.log(`Your opponent says, ${RPS}. `)
+
+let randomNumber2 = Math.floor(Math.random() * 3);
+
+console.log(randomNumber2);
+
+let yourRPS = '';
+
+switch (randomNumber2) {
+  case 0:
+    yourRPS = 'Rock';
+    break;
+  case 1:
+    yourRPS = 'Paper';
+    break;
+  case 2:
+    yourRPS = 'Scissor';
+    break;
+}
+
+console.log(`You have said, ${yourRPS}. `)
